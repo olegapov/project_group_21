@@ -21,10 +21,22 @@
   --linear-1: #BEC7C2;
   --linear-2: #A1B5BA;
   --white: #F6F5EF;
+  
 }
 
+/* @font-face {
+  font-family: Andruha-700;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: Open-400;
+  src: url(../fonts/OpenSans-Regular.ttf);
+} */
+
 .body {
-  background: var(--dark-blue);
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--dark-blue);
 
 }
 
