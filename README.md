@@ -5,6 +5,7 @@ AnnBortnik
 frirw
 OlesiaBonnie
 cold1front
+Vaddex
 
 # Vanilla App Template
 
