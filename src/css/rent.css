@@ -63,6 +63,7 @@
   line-height: 110%; /* 19.8px */
   letter-spacing: -0.81px;
   background-color: black;
+  margin-top: 64px;
 }
 .form-input {
   width: 443px;
