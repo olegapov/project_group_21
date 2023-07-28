@@ -34,7 +34,7 @@
   src: url(../fonts/OpenSans-Regular.ttf);
 } */
 
-.body {
+body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--dark-blue);
 
