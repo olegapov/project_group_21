@@ -5,6 +5,17 @@ AnnBortnik
 frirw
 OlesiaBonnie
 cold1front
+Vaddex
+
+@Oleg Poviychuk         team lead
+@Anna scrum master    + header
+@Dmitrijs Dambergs      RentBlock
+@iris k.                AboutBlock
+@Олена Рубан            ServicesBlock
+@Антон                  ReviewsBlock
+@Влад Гос               YachtsBlock
+@Iryna Kyva             HeroBlock
+@Олеся Железняк         Footer
 
 # Vanilla App Template
 
