@@ -2,6 +2,8 @@
   background-color: var(--white);
 }
 .section-rent-yacht {
+  display: flex;
+  justify-content: center;
 }
 .container {
   margin: 0 32px;
@@ -10,12 +12,12 @@
   outline-offset: -2px;*/
 }
 .cont-rent-yacht {
+  max-width: 913px;
   background-color: #11131f;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 188px;
-  padding: 0 184px;
 }
 .rent-yacht {
   display: flex;
@@ -67,6 +69,7 @@
   border: none;
   border-bottom: 1px solid #f6f5ef;
   background-color: #11131f;
+  margin-bottom: 28px;
 }
 .form-textarea {
   width: 443px;
