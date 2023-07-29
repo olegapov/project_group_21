@@ -50,6 +50,11 @@
     gap: 69px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .cont-rent-yacht {
+    gap: 188px;
+  }
+}
 .rent-yacht {
   display: flex;
   flex-direction: column;
