@@ -1,2 +1,105 @@
-.yahts {
+.yahts-container {
+  background-color: var(--dark-blue);
+}
+.yahts-title-container {
+  display: flex;
+  min-width: 640px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  margin-bottom: 100px;
+  margin-right: 64px;
+  margin-left: 64px;
+}
+/* .yahts-title-background-circle-first {
+  width: 399px;
+  height: 399px;
+  transform: rotate(-44.094deg);
+  flex-shrink: 0;
+  border-radius: 399px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+} */
+.yahts-title-box {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 64px;
+  color: var(--white);
+}
+.title-btn-box {
+  display: flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 60px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.yahts-cards-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 100px 32px;
+}
+.yahts-ul-cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.yahts-li-cards {
+  width: 354px;
+  height: 508px;
+  flex-shrink: 0;
+  background: var(--blue_2);
+  border-radius: 24px;
+}
+.yaht-cards-img {
+  border-radius: 24px;
+  margin: 16px 16px 0 16px;
+  width: 312px;
+  height: 268px;
+  flex-shrink: 0;
+}
+.card-text-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 137px;
+  margin: 32px;
+}
+.card-main-title {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.cards-second-title {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.5;
+}
+.cards-table {
+  margin: 0 132px 32px 32px;
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
+}
+.cards-table-row:first-child {
+  margin-right: 32px;
 }
