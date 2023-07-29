@@ -1,10 +1,23 @@
 .footer-section {
-    background-color: #11131F;
+    background-color: var(--white);
+    background-image: radial-gradient(ellipse at center bottom, #F6F5EF, #1F212D, #11131F);
+padding: 64px 0;
 }
+
 .footer-container {
+    width: 1216px;
 display: flex;
+    align-items: baseline;
+    width: 1216px;
+        height: 284px;
+        flex-shrink: 0;
+        margin: 0 auto;
 }
 .footer-content {
+margin: 0;
+    margin-right: 120px;
+}
+.footer-icon-link {
 
 }
 
@@ -24,7 +37,9 @@ color: var(--white, #F6F5EF);
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
+.nav-menu-footer {
 
+}
 .nav-list-footer {
 color: var(--white, #F6F5EF);
     font-family: DM Sans;
@@ -35,13 +50,15 @@ color: var(--white, #F6F5EF);
     /* 16.52px */
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    display: flex;
+        gap: 24px;
 }
 .nav-group-footer link {
 stroke-width: 1px;
     stroke: rgba(246, 245, 239, 0.50);
 }
 .footer-tab-social {
-
+margin-left: auto;
 }
 
 .social-footer-text {
@@ -55,7 +72,8 @@ color: var(--white, #F6F5EF);
     text-transform: uppercase;
 }
 .footer-icons-list {
-
+display: flex;
+gap: 16px;
 }
 .social-icons-group {
 
