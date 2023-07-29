@@ -23,7 +23,9 @@ margin: 0;
 
 .footer-icon {
 flex-shrink: 0;
-background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+
+fill: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+
 }
 
 .footer-logo  {
@@ -72,8 +74,8 @@ color: var(--white, #F6F5EF);
     text-transform: uppercase;
 }
 .footer-icons-list {
-display: flex;
-gap: 16px;
+display: inline-flex;
+    gap: 16px;
 }
 .social-icons-group {
 
@@ -82,5 +84,7 @@ gap: 16px;
 
 }
 .social-footericon {
-
+    fill: none;
+stroke-width: 1px;
+    stroke: rgba(246, 245, 239, 0.50);
 }
