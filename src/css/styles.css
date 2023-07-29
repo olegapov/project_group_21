@@ -57,7 +57,7 @@ color: var(--white);
 }
 
 .button-text {
-  font-family: DM Sans 700;
+font-family: DM Sans 700;
 font-weight: 700;
 font-size: 14px;
 line-height: 15.4px;
@@ -65,8 +65,8 @@ letter-spacing: -4.5%;
 color: var(--white);
 }
 
-h1 {
-  font-family: DM Sans 500;
+.hero-title-css {
+  font-family: DM Sans 500 Italic;
   font-weight: 500;
   font-size: 60px;
   font-style: italic;
@@ -74,6 +74,14 @@ h1 {
   letter-spacing: -4.5%;
   color: var(--white);
 }
+.heading {
+  font-family: DM Sans 500;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: -4.5%;
+  color: var(--white);
+} 
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
