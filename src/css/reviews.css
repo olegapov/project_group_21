@@ -1,3 +1,197 @@
 .reviews {
     background-color: var(--light-green);
 }
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.reviews {
+    background-color: cornsilk;
+    font-family: sans-serif;
+}
+
+.text-box {
+    /* background-color: #11131F; */
+}
+
+.yacht-heading {
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.08px;
+    display: initial;
+}
+
+.yacht-h {
+    color: #F6F5EF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.08px;
+    display: initial;
+}
+
+.reviews-container {
+    padding-inline: 20px;
+}
+
+.text {
+    color: #F6F5EF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    margin-top: 24px;
+}
+
+.card {
+    border-radius: 24px;
+    background: #1F212D;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card-name {
+    color: #F6F5EF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.72px;
+}
+
+.review {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.navigation span::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #1F212D;
+    display: block;
+    border-radius: 50%;
+    filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.20));
+    transition: 0.25s ease;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+.navigation span:hover::before {
+    background-color: #88B3B9;
+        stroke-width: 1px;
+        border: 1px solid #93ABAE;
+        box-shadow: 2px 2px 3px 0px rgba(79, 98, 120, 0.90) inset, 3px 3px 5px 0px rgba(213, 230, 245, 0.40) inset, 0px 0px 4px 0px rgba(46, 68, 87, 0.00) inset;
+}
+.card:nth-child(2) {
+    display: none;
+}
+.card:nth-child(3) {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .reviews-container {
+        padding-inline: 32px;
+    }
+    .yacht-h {
+        font-size: 32px;
+    }
+    .yacht-heading {
+        font-size: 32px;
+        width: 497px;
+            font-size: 32px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: -1.44px;
+    }
+    .text {
+        font-size: 16px;
+        margin-left: auto;
+        width: 273px;
+        letter-spacing: -0.32px;
+    }
+    .reviews-card {
+        display: flex;
+        gap: 16px;
+    }
+        .card:nth-child(2) {
+            display: flex;
+        }
+}
+@media only screen and (min-width: 1280px) {
+            .card:nth-child(3) {
+                    display: flex;
+                }
+                .card {
+                    width: 384px;
+                    height: 282px;
+                }
+                .reviews-card {
+                    justify-content: center;
+                }
+                .review {
+                    font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                        letter-spacing: -0.32px;
+                        text-align: center;
+                }
+                .card-name {
+                    text-align: center;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 110%;
+                        letter-spacing: -0.81px;
+                        
+                }
+                                .text-box {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                .text {
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 140%;
+                                        letter-spacing: -0.32px;
+                                }
+                                .avatar {
+                                    margin-bottom: 24px;
+                                }
+}
