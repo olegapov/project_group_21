@@ -1,3 +1,13 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./yahts.css');
+@import url('./service.css');
+@import url('./rent.css');
+@import url('./reviews.css');
+@import url('./footer.css');
+
 p,
 h1,
 h2,
@@ -32,15 +42,12 @@ img {
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./about.css');
-@import url('./yahts.css');
-@import url('./service.css');
-@import url('./rent.css');
-@import url('./reviews.css');
-@import url('./footer.css');
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--dark-blue);
+}
+
+
 
 :root {
   --dark-blue: #11131f;
@@ -52,11 +59,7 @@ img {
   
 }
 
-body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: var(--dark-blue);
 
-}
 @font-face {
   font-family: "DM Sans 400";
   src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
