@@ -178,6 +178,7 @@
   font-weight: 500;
   line-height: 120%; /* 38.4px */
   letter-spacing: -1.44px;
+  margin-bottom: 16px;
 }
 .popup-comments p {
   color: var(--white, #f6f5ef);
