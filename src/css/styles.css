@@ -1,3 +1,6 @@
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
+
+
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -7,6 +10,7 @@
 @import url('./rent.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+
 
 p,
 h1,
@@ -45,6 +49,7 @@ img {
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--dark-blue);
+  overflow-x: hidden;
 }
 
 
@@ -60,7 +65,7 @@ body {
 }
 
 
-@font-face {
+/* @font-face {
   font-family: "DM Sans 400";
   src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
 }
@@ -75,8 +80,36 @@ body {
 @font-face {
   font-family: "DM Sans 700";
   src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
-}
+} */
 
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../fonts/DMSans-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../fonts/DMSans-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../fonts/DMSans-MediumItalic.woff2) format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../fonts/DMSans-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 .text-card {
 font-family: DM Sans 400;
@@ -113,6 +146,7 @@ color: var(--white);
   letter-spacing: -4.5%;
   color: var(--white);
 } 
+
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
