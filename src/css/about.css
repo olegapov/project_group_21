@@ -1,3 +1,135 @@
 .about {
-    background-color: var(--light-green);
+  background-color: var(--dark-blue);
+  margin-top: 164px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.about-main-container {
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.about-accent-text-container {
+  max-width: 514px;
+  max-height: 152px;
+  padding-right: 302px;
+}
+
+.about-subaccent-text-container {
+}
+
+.about-text-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text-item {
+  width: 185px;
+  height: 242px;
+  padding-right: 32px;
+}
+
+.accent-text {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.44px;
+}
+
+.gradient-text {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -1.44px;
+  background: var(
+    --linear-green,
+    linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subaccent-text {
+  min-width: 185px;
+  color: var(--white, #f6f5ef);
+  /* main text */
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.32px;
+}
+
+.about-img-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.about-img-item-1 {
+  height: 20%;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding-top: 317px;
+  flex-shrink: 0;
+}
+
+.about-img-block-wrapper {
+  display: flex;
+  position: relative;
+  padding-top: 64px;
+  padding-left: 32px;
+}
+
+.about-img-item-2 {
+  height: 60%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.about-img-gradient {
+  height: 40%;
+  position: absolute;
+  top: 570px;
+  left: 32px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #11131f 100%),
+    url(../img/about/yaht-3-1x-pc.png);
+  background-position: -86.838px 0px;
+  background-size: 166.799% 100%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.yacht-block-container {
+  max-width: 882px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.yacht-block-title {
+  max-width: 100%;
+  color: var(--white, #f6f5ef);
+  /* h2 */
+  font-family: DM Sans;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 110px */
+  letter-spacing: -4.5px;
 }
