@@ -10,8 +10,7 @@
 }
 
 .reviews {
-    background-color: cornsilk;
-    font-family: sans-serif;
+    /* background-color: cornsilk; */
 }
 
 .text-box {
@@ -42,6 +41,7 @@
 
 .reviews-container {
     padding-inline: 20px;
+    
 }
 
 .text {
@@ -193,5 +193,17 @@
                                 }
                                 .avatar {
                                     margin-bottom: 24px;
+                                }
+                                .reviews-container {
+                                    max-width: 1216px;
+                                    margin: 0 auto;
+                                    justify-content: space-between;
+                                }
+                                .card {
+                                    margin-top: 0;
+                                }
+                                .reviews-card {
+                                    margin-top: 40px;
+                                    
                                 }
 }
