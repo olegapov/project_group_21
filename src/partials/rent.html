@@ -25,6 +25,7 @@
                 type="text"
                 id="user-name"
                 name="user-name"
+                pattern="^.* .*$"
                 required
                 placeholder="Full Name"
               />
@@ -37,6 +38,7 @@
                 type="email"
                 id="email"
                 name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                 required
                 placeholder="Email"
               />
@@ -49,6 +51,7 @@
                 type="tel"
                 id="phone"
                 name="phone"
+                pattern="[0-9]{10}"
                 required
                 placeholder="Phone number"
               />
@@ -56,6 +59,7 @@
             <div class="form-text">
               <label class="form-label" for="user-comment">Comment</label>
               <textarea
+                pattern="[a-z]{1,30}(,[a-z]{1,30})*"
                 class="form-textarea"
                 name="user-comment"
                 id="user-comment"
