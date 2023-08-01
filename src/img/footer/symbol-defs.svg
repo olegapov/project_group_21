@@ -47,4 +47,11 @@
 </linearGradient>
 </defs>
    </symbol>
+   <symbol id="Ellipseleft" viewBox="0 0 107 32">
+<path d="M0 0h32v32h-32v-32z"></path>
+</symbol>
+<symbol id="Ellipseright" viewBox="0 0 105 32">
+<path d="M0 0h32v32h-32v-32z"></path>
+</symbol>
+</defs>
 </svg>

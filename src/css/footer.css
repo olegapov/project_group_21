@@ -42,8 +42,8 @@
 }
 
 .footer-icon {
-flex-shrink: 0;
-/*fill: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));*/
+/*flex-shrink: 0;
+fill: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));*/
 }
 
 .footer-logo  {
@@ -100,7 +100,7 @@ stroke-width: 1px;
 .social-icons-group {
 
 }
-.social-footer-button {
+.social-footer-link {
     display: inline-flex;
     gap: 16px;
     justify-content: center;
@@ -111,16 +111,16 @@ stroke-width: 1px;
     /*color: #F6F5EF;
     border-color: #F6F5EF;*/
 }
- .social-footer-button svg path {
+ .social-footer-link svg path {
     fill: var(--white, #F6F5EF);
     stroke: var(--white, #F6F5EF);
  }
-.social-footer-button:hover svg path {
+.social-footer-link:hover svg path {
 fill: var(--light-green, #93ABAE);
 stroke: var(--light-green, #93ABAE);
 }
 
-.social-footer-button:focus svg path
+.social-footer-link:focus svg path
 {fill: var(--light-green, #93ABAE);
     stroke: var(--light-green, #93ABAE);
     /*border-color: linear-gradient (45deg, #BEC7C2, #A1B5BA);
@@ -174,8 +174,8 @@ z-index:0;
 
 .footer-ellipse1 {
     position: absolute;
-    top: 250px;
-    left: 250px;
+    top: 172px;
+    left: 139px;
     width: 415px;
     height: 415px;
     flex-shrink: 0;
@@ -188,8 +188,8 @@ z-index:0;
 
 .footer-ellipse2 {
     position: absolute;
-    top: 750px;
-    left: 250px;
+    top: 634px;
+    left: 216px;
     width: 317px;
     height: 317px;
     flex-shrink: 0;
