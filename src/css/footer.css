@@ -9,20 +9,20 @@
     /*padding: 64px 0;*/
     margin: 0 auto;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
     position: relative;
     }
 
 .footer-container {
     display: flex;
-    gap: 315px;
-    max-width: 1216px;
-    align-items: baseline;
-
-    /*flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    
+    /*flex-direction: row;
+    gap: 315px;
     flex-shrink: 0;
-    padding-top: 64px;*/
+    padding-top: 64px;
+    max-width: 1216px;*/
 }
 .footer-container::after {
     content: '';
@@ -77,11 +77,10 @@ color: var(--white, #F6F5EF);
 stroke-width: 1px;
     stroke: rgba(246, 245, 239, 0.50);
 }
-.footer-social {
+/*.footer-social {
     fill: #F6F5EF;
-/*margin-right: auto;*/
-}
-
+margin-right: auto;
+}*/
 .social-footer-text {
     color: var(--white, #F6F5EF);
     font-family: DM Sans;
@@ -203,6 +202,10 @@ z-index:0;
 /*--Mobile menu--*/
 @media screen and (max-width: 375px) {
 .footer-section {
+    width: 335px;
+    height: 334px;
+    min-width: 320px;
+        max-width: 375px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -212,12 +215,44 @@ z-index:0;
     overflow: hidden;
 }
 }
+
+.footer-container {
+    display: inline-flex;
+}
+
+.footer-content{
+    display: inline-flex;
+        align-items: center;
+        gap: 8px;
+}
+
+.nav-footer{
+    flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 14px;
+}
+
+.footer-social{
+    display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+}
+
+.footer-bottom {
+    align-items: flex-start;
+        gap: 14px;
+}
 .footer-icon {
-    
+
 }
 /*tablet users*/
 @media screen and (min-width: 768px) {
     .footer-section {
+        width: 704px;
+            height: 280px;
+            max-width: 768px;
             padding-top: 32px;
             padding-bottom: 16px;
             margin: 0 auto;
@@ -228,6 +263,9 @@ z-index:0;
 /*desktop users*/
 @media screen and (min-width: 1280px) {
 .footer-section {
+    width: 1216px;
+        height: 284px;
+        max-width: 1280px;
         padding-top: 32px;
         padding-bottom: 16px;
         margin: 0 auto;
