@@ -31,7 +31,7 @@
   z-index: 3;
 }
 .yahts-title-box {
-  font-family: 'Open Sans', sans-serif;
+  font-family: DM Sans;
   font-size: 70px;
   font-style: normal;
   font-weight: 500;
@@ -40,7 +40,7 @@
   z-index: 5;
 }
 .title-btn-box {
-  font-family: 'Open Sans', sans-serif;
+  font-family: DM Sans;
   display: flex;
   padding: 14px 28px;
   align-items: flex-start;
@@ -84,7 +84,7 @@
   margin: 32px;
 }
 .cards-main-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -93,8 +93,7 @@
   color: var(--white);
 }
 .cards-second-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.36px;
