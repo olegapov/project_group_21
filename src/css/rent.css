@@ -1,6 +1,6 @@
-/*.rent {
-  background-color: var(--white);
-}*/
+.rent {
+  /*background-color: var(--white);*/
+}
 .section-rent-yacht {
   display: flex;
   justify-content: center;
