@@ -52,6 +52,7 @@
     line-height: 140%;
     letter-spacing: -0.28px;
     margin-top: 24px;
+    max-width: 335px;
 }
 
 .card {
@@ -64,6 +65,7 @@
     gap: 8px;
     justify-content: center;
     margin-top: 40px;
+    max-width: 335px;
 }
 
 .card-name {
@@ -148,6 +150,7 @@
     }
         .card:nth-child(2) {
             display: flex;
+            width: 344px;
         }
 }
 @media only screen and (min-width: 1280px) {
