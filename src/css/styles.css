@@ -112,7 +112,7 @@ body {
 }
 
 .text-card {
-font-family: DM Sans 400;
+font-family: DM Sans;
 font-weight: 400;
 font-size: 14px;
 line-height: 19.6px;
@@ -121,7 +121,7 @@ color: var(--white);
 }
 
 .button-text {
-font-family: DM Sans 700;
+font-family: DM Sans;
 font-weight: 700;
 font-size: 14px;
 line-height: 15.4px;
@@ -130,7 +130,7 @@ color: var(--white);
 }
 
 .hero-title-css {
-  font-family: DM Sans 500 Italic;
+  font-family: DM Sans;
   font-weight: 500;
   font-size: 60px;
   font-style: italic;
@@ -139,13 +139,39 @@ color: var(--white);
   color: var(--white);
 }
 .heading {
-  font-family: DM Sans 500;
+  font-family: DM Sans;
   font-weight: 500;
   font-size: 24px;
   line-height: 28.8px;
   letter-spacing: -4.5%;
   color: var(--white);
 } 
+
+.container {
+max-width: 375px;
+margin: 0 auto;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+}  
 
 
 /* :root {
