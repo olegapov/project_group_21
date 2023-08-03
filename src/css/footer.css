@@ -46,6 +46,10 @@
 fill: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));*/
 }
 
+.footer-icon-mob {
+
+}
+
 .footer-logo  {
     color: var(--white, #F6F5EF);
     font-family: DM Sans;
@@ -271,6 +275,8 @@ z-index:0;
     display: flex;
         flex-direction: column;
         justify-content: space-between;
+        min-width: 768px;
+            max-width: 1200px;
          width: 704px;
             height: 280px;
             /* max-width: 768px; */
@@ -305,6 +311,7 @@ z-index:0;
      width: 1216px;
      height: 284px;
     /*padding: 64px 0;*/
+    min-width: 1200px;
     margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 16px;
