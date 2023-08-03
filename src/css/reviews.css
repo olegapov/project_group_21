@@ -41,6 +41,7 @@
 
 .reviews-container {
     padding-inline: 20px;
+    margin: 0 auto;
     
 }
 
@@ -125,7 +126,9 @@
 @media only screen and (min-width: 768px) {
     .reviews-container {
         padding-inline: 32px;
-        justify-content: center;
+        /* justify-content: center; */
+        margin: 0 auto;
+        max-width: 768px;
     }
     .yacht-h {
         font-size: 32px;
