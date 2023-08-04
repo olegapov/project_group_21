@@ -38,12 +38,6 @@ img {
   text-decoration: none;
 }
 
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--dark-blue);
@@ -58,23 +52,6 @@ body {
   --linear-2: #a1b5ba;
   --white: #f6f5ef;
 }
-
-/* @font-face {
-  font-family: "DM Sans 400";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
-}
-@font-face {
-  font-family: "DM Sans 500";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
-}
-@font-face {
-  font-family: "DM Sans 500 Italic";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,500&display=swap');
-}
-@font-face {
-  font-family: "DM Sans 700";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
-} */
 
 @font-face {
   font-family: 'DM Sans';
@@ -106,21 +83,21 @@ body {
 }
 
 .text-card {
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.6px;
-  letter-spacing: -2%;
-  color: var(--white);
+font-family: DM Sans;
+font-weight: 400;
+font-size: 14px;
+line-height: 19.6px;
+letter-spacing: -2%;
+color: var(--white);
 }
 
 .button-text {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 15.4px;
-  letter-spacing: -4.5%;
-  color: var(--white);
+font-family: DM Sans;
+font-weight: 700;
+font-size: 14px;
+line-height: 15.4px;
+letter-spacing: -4.5%;
+color: var(--white);
 }
 
 .hero-title-css {
@@ -139,46 +116,51 @@ body {
   line-height: 28.8px;
   letter-spacing: -4.5%;
   color: var(--white);
-}
+} 
 
 .container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+max-width: 375px;
+margin: 0 auto;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-  }
-}
+    margin: 0 auto;
+    }
+} 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    min-width: 1200px;
     margin: 0 auto;
+    min-width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
-  }
+   }
+}  
+
+.myBtn {
+  display: hidden; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  width: 44px;
+  height: 44px;
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--light-green); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
-/* :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-} */
+.myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
