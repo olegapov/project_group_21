@@ -172,19 +172,23 @@
 @media screen and (min-width: 1280px) {
   .about-img-item-1 {
     position: relative;
-    margin: 0 auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 533px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-img-item-2 {
-    position: absolute;
-    top: 307px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(-75%);
   }
 }
 
-. .about-img-gradient {
+.about-img-gradient {
   position: absolute;
   top: 102.4%;
   left: 75px;
@@ -201,7 +205,7 @@
 @media screen and (min-width: 1280px) {
   .about-img-gradient {
     position: absolute;
-    top: 104%;
+    top: 63.2%;
     z-index: -1;
   }
 }
