@@ -1,20 +1,54 @@
+.about-main-container {
+}
+
+.about-accent-text-container {
+  width: 100%;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-accent-text-container {
+    max-width: 514px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-accent-text-container {
+    max-width: 514px;
+  }
+}
+
 .accent-text {
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: -1.44px;
+  letter-spacing: -0.0675rem;
+}
+
+@media screen and (min-width: 768px) {
+  .accent-text {
+    font-size: 32px;
+    letter-spacing: -0.09rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .accent-text {
+    font-size: 32px;
+    letter-spacing: -0.09rem;
+  }
 }
 
 .gradient-text {
   font-family: DM Sans;
-  font-size: 32px;
+  font-size: 24px;
   font-style: italic;
   font-weight: 500;
-  line-height: 120%; /* 38.4px */
-  letter-spacing: -1.44px;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.0675rem;
   background: var(
     --linear-green,
     linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%)
@@ -24,34 +58,40 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .gradient-text {
+    font-size: 32px;
+    letter-spacing: -0.09rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gradient-text {
+    font-size: 32px;
+    letter-spacing: -0.09rem;
+  }
+}
+
 .subaccent-text {
-  min-width: 185px;
   color: var(--white, #f6f5ef);
-  /* main text */
   font-family: DM Sans;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
-  letter-spacing: -0.32px;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.0175rem;
 }
 
-.yacht-block-container {
-  max-width: 882px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .subaccent-text {
+    font-size: 16px;
+    letter-spacing: -0.02rem;
+  }
 }
 
-.yacht-block-title {
-  max-width: 100%;
-  color: var(--white, #f6f5ef);
-  /* h2 */
-  font-family: DM Sans;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 110px */
-  letter-spacing: -4.5px;
+@media screen and (min-width: 1280px) {
+  .subaccent-text {
+    font-size: 16px;
+    letter-spacing: -0.02rem;
+  }
 }
