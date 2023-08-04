@@ -316,10 +316,9 @@ height: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-     width: 1216px;
-     height: 284px;
+         height: 284px;
     /*padding: 64px 0;*/
-    min-width: 1200px;
+    min-width: 1216px;
     margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 16px;
