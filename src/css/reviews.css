@@ -66,7 +66,7 @@
     gap: 8px;
     justify-content: center;
     margin-top: 40px;
-    max-width: 335px;
+    width: 335px;
 }
 
 .card-name {
@@ -93,7 +93,7 @@
     width: 48px;
     height: 48px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 100px;
 }
 .navigation span::before {
     content: "";
@@ -154,7 +154,6 @@
     }
         .card:nth-child(2) {
             display: flex;
-            width: 344px;
         }
 }
 @media only screen and (min-width: 1280px) {
@@ -162,11 +161,11 @@
                     display: flex;
                 }
                 .card {
-                    width: 384px;
+                    max-width: 384px;
                     height: 282px;
                 }
                 .reviews-card {
-                    justify-content: center;
+                    justify-content: space-between
                 }
                 .review {
                     font-size: 16px;
@@ -190,6 +189,7 @@
                                     flex-direction: row;
                                     justify-content: space-between;
                                     align-items: center;
+                                    max-width: 1280px;
                                 }
                                 .text {
                                         font-size: 16px;
@@ -200,17 +200,22 @@
                                 }
                                 .avatar {
                                     margin-bottom: 24px;
+                                    border-radius: 100px;
                                 }
                                 .reviews-container {
-                                    max-width: 1216px;
+                                    max-width: 1280px;
                                     margin: 0 auto;
                                     justify-content: space-between;
                                 }
                                 .card {
                                     margin-top: 0;
+                                    width: 384px;
+                                    
                                 }
                                 .reviews-card {
                                     margin-top: 40px;
+                                    max-width: 1216px;
+                                    gap: 32px;
                                     
                                 }
 }
