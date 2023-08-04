@@ -148,7 +148,7 @@ color: var(--white);
 } 
 
 .container {
-max-width: 375px;
+max-width: 335px;
 margin: 0 auto;
 padding-left: 20px;
 padding-right: 20px;
@@ -156,8 +156,7 @@ padding-right: 20px;
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
-    max-width: 1200px;
+    max-width: 704px;
     margin: 0 auto;
     padding-left: 32px;
     padding-right: 32px;
@@ -166,7 +165,7 @@ padding-right: 20px;
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1280px;
+    min-width: 1216px;
     margin: 0 auto;
     padding-left: 32px;
     padding-right: 32px;
