@@ -1,6 +1,5 @@
 @import url('../../node_modules/modern-normalize/modern-normalize.css');
 
-
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -10,7 +9,6 @@
 @import url('./rent.css');
 @import url('./reviews.css');
 @import url('./footer.css');
-
 
 p,
 h1,
@@ -40,47 +38,20 @@ img {
   text-decoration: none;
 }
 
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--dark-blue);
   overflow-x: hidden;
 }
 
-
-
 :root {
   --dark-blue: #11131f;
-  --blue_2: #1F212D;
-  --light-green: #93ABAE;
-  --linear-1: #BEC7C2;
-  --linear-2: #A1B5BA;
-  --white: #F6F5EF;
-  
+  --blue_2: #1f212d;
+  --light-green: #93abae;
+  --linear-1: #bec7c2;
+  --linear-2: #a1b5ba;
+  --white: #f6f5ef;
 }
-
-
-/* @font-face {
-  font-family: "DM Sans 400";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
-}
-@font-face {
-  font-family: "DM Sans 500";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
-}
-@font-face {
-  font-family: "DM Sans 500 Italic";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,500&display=swap');
-}
-@font-face {
-  font-family: "DM Sans 700";
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
-} */
 
 @font-face {
   font-family: 'DM Sans';
@@ -112,7 +83,7 @@ body {
 }
 
 .text-card {
-font-family: DM Sans 400;
+font-family: DM Sans;
 font-weight: 400;
 font-size: 14px;
 line-height: 19.6px;
@@ -121,7 +92,7 @@ color: var(--white);
 }
 
 .button-text {
-font-family: DM Sans 700;
+font-family: DM Sans;
 font-weight: 700;
 font-size: 14px;
 line-height: 15.4px;
@@ -130,7 +101,7 @@ color: var(--white);
 }
 
 .hero-title-css {
-  font-family: DM Sans 500 Italic;
+  font-family: DM Sans;
   font-weight: 500;
   font-size: 60px;
   font-style: italic;
@@ -139,7 +110,7 @@ color: var(--white);
   color: var(--white);
 }
 .heading {
-  font-family: DM Sans 500;
+  font-family: DM Sans;
   font-weight: 500;
   font-size: 24px;
   line-height: 28.8px;
@@ -147,19 +118,49 @@ color: var(--white);
   color: var(--white);
 } 
 
+.container {
+max-width: 375px;
+margin: 0 auto;
+padding-left: 20px;
+padding-right: 20px;
+}
 
-/* :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+    }
+} 
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+@media screen and (min-width: 1280px) {
+  .container {
+    margin: 0 auto;
+    min-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+   }
+}  
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-} */
+.myBtn {
+  display: hidden; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  width: 44px;
+  height: 44px;
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--light-green); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
