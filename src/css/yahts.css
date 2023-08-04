@@ -1,3 +1,224 @@
 .yahts {
-    background-color: var(--white);
+  position: relative;
+}
+.yahts-container {
+  position: relative;
+  z-index: 2;
+}
+.yahts-title-container {
+  display: flex;
+  min-width: 335px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-right: 64px;
+  margin-left: 64px;
+}
+@media screen and (min-width: 768px) {
+  .yahts-title-container {
+    display: flex;
+    width: 640px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+  }
+  .yahts-title-box {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -3.15px;
+  }
+}
+.yahts::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 399px;
+  height: 399px;
+  transform: rotate(-44.094deg);
+  flex-shrink: 0;
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91afba;
+  filter: blur(100px);
+  z-index: 3;
+}
+.yahts-title-box {
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--white);
+  z-index: 5;
+}
+@media screen and (min-width: 768px) {
+  .yahts-title-box {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -3.15px;
+  }
+}
+.title-btn-box {
+  font-family: DM Sans;
+  display: flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 60px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+@media screen and (min-width: 768px) {
+  .title-btn-box {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.81px;
+  }
+}
+.yahts-cards-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 100px 32px;
+}
+@media screen and (min-width: 1280px) {
+  .yahts-cards-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+  }
+}
+.yahts-ul-cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.yahts-li-cards {
+  max-width: 335px;
+  max-height: 469px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--blue_2);
+}
+@media screen and (min-width: 768px) {
+  .yahts-li-cards {
+    width: 354px;
+    height: 508px;
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yahts-li-cards {
+    width: 354px;
+    height: 508px;
+    flex-shrink: 0;
+  }
+}
+.yahts-cards-img {
+  border-radius: 24px;
+  margin: 16px 16px 0 16px;
+  width: 312px;
+  height: 268px;
+  flex-shrink: 0;
+}
+.cards-text-box {
+  min-width: 280px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+}
+.cards-main-title {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.cards-second-title {
+  color: var(--white);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.block-info {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 0 0 24px 24px;
+}
+.cards-info-box {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.cards-info-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.cards-info-p {
+  color: var(--white);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.cards-info-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+.cards-data-p {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
+  color: var(--white);
+}
+.yahts-cards-btn-box {
+  display: inline-flex;
+  position: absolute;
+  top: 93%;
+  left: 40%;
+  align-items: flex-start;
+  gap: 14px;
+}
+.cards-slider-btn {
+  display: flex;
+  padding: 14px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 60px;
+  background-color: transparent;
 }
