@@ -1,3 +1,58 @@
 <header class="header">
-  <div class="header-container"><h2>header</h2></div>
+  <div class="header-container">
+    <!--logo-->
+    <a class="header-logo-link" href="">
+      <svg class="header-logo-icon">
+        <use href="./img/header/header-icons.svg#logo-boat-icon"></use>
+      </svg>
+      <span class="header-logo-text">Yacht Adventures</span>
+    </a>
+    <!--navigation-->
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-item"><a class="header-link" href="#about">About</a></li>
+        <li class="header-item"><a class="header-link" href="#yachts">Yachts</a></li>
+        <li class="header-item"><a class="header-link" href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <!--mobile-menu-button-->
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="header-open-mobile-menu-icon" width="24" height="24">
+        <use href="./img/header/header-icons.svg#header-mobile-open-menu-icon"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-container  js-menu-container" id="mobile-menu">
+    <div class="menu-header header-container">
+      <a class="header-logo-link" href="">
+        <svg class="header-logo-icon">
+          <use href="./img/header/header-icons.svg#logo-boat-icon"></use>
+        </svg>
+        <span class="header-logo-text">Yacht Adventures</span>
+      </a>
+      <button class="menu-toggle js-close-menu">
+        <svg class="header-close-mobile-menu-icon" width="24px" height="24px">
+          <use href="./img/header/header-icons.svg#header-mobile-close-menu-icon"></use>
+        </svg>
+      </button>
+
+         </div>
+         <div class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Yachts</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Reviews</a>
+            </li>
+          </ul>
+    </div>
+  </div>
+
+
+
 </header>
