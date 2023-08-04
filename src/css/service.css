@@ -5,6 +5,7 @@
 }
 
 .container {
+    min-width: 320px;
     max-width: 375px;
     margin: 0 auto;
     padding-left: 20px;
@@ -13,8 +14,8 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        min-width: 768px;
-        max-width: 1280px;
+        /* min-width: 768px; */
+        max-width: 768px;
         margin: 0 auto;
         padding-left: 32px;
         padding-right: 32px;
@@ -23,7 +24,7 @@
 
 @media screen and (min-width: 1280px) {
     .container {
-        min-width: 1280px;
+        max-width: 1280px;
         margin: 0 auto;
         padding-left: 32px;
         padding-right: 32px;
@@ -47,24 +48,62 @@ img {
     flex-direction: column;
     gap: 24px;
 }
-.service-item {
+.service-container {
     position: relative;
+    z-index: 2;
 }
-.service-item:nth-child(1):before {
+/* .service-item:nth-child(1):before  */
+.service-container::before {
     content: "";
     width: 323px;
     height: 323px;
     top: 306px;
-    left: 251px;
+    right: 251px;
     transform: rotate(-45deg);
     flex-shrink: 0;
     border-radius: 323px;
     opacity: 0.6;
-    background-color: #91AFBA;
+    background: #91AFBA;
     filter: blur(100px);
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
+@media only screen and (min-width:768px) {
+    .service-container::before {
+        content: "";
+        width: 414px;
+        height: 414px;
+        top: 565px;
+        right: 540px;
+        transform: rotate(-45deg);
+        flex-shrink: 0;
+        border-radius: 414px;
+        opacity: 0.6;
+        background: #91AFBA;
+        filter: blur(100px);
+        position: absolute;
+        z-index: -3;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .service-container::before {
+        content: "";
+        width: 414px;
+        height: 414px;
+        top: 230px;
+        right: 1078px;
+        transform: rotate(-45deg);
+        flex-shrink: 0;
+        border-radius: 414px;
+        opacity: 0.6;
+        background: #91AFBA;
+        filter: blur(100px);
+        position: absolute;
+        z-index: -5;
+    }
+}
+
 
 /* ------TABLET-------- */
 @media only screen and (max-width: 767px) {
