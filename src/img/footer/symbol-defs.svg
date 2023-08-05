@@ -55,6 +55,9 @@
 </linearGradient>
 </defs>
    </symbol>
+   <symbol id="Ellipsemobile" viewBox="0 0 41 32">
+      <path d="M42.271 28.7c8.956 9.019 9.058 23.742.229 32.885s-23.247 9.243-32.202.224c-8.956-9.019-9.058-23.742-.229-32.885s23.247-9.243 32.202-.224z"/>
+    </symbol>
    <symbol id="Ellipseleft" viewBox="0 0 107 32">
 <path d="M0 0h32v32h-32v-32z"></path>
 </symbol>
