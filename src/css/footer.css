@@ -33,7 +33,7 @@
 .footer-container::after {
   content: '';
   position: absolute;
-  width: 335%;
+  /* width: 335%; */
   top: 2px;
   display: block;
   height: 1px;
@@ -291,7 +291,7 @@ stroke: var(--light-green, #93ABAE);
     justify-content: space-between;
     min-width: 768px;
     max-width: 1200px;
-    width: 704px;
+    /* width: 704px; */
     height: 280px;
     /* max-width: 768px; */
     padding-top: 32px;
@@ -326,7 +326,7 @@ stroke: var(--light-green, #93ABAE);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1216px;
+    /* width: 1216px; */
     min-width: 1200px;
     margin: 0 auto;
     padding-top: 32px;
