@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project_group_21/favicon.svg" />
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKXSURBVHgBpZRLbhNBEIar2pYTBBLODeYGZM3GtiIWgUXCGilxThDfwOYEyQ2MxJJF2CALIjOykZ1wisQnYMLKONNd/NXzyASs+JGx2l3T0/V19V/VTbTG8yUMt5eZZ2iNRwwdnoVhddG8teDkaKtUkheLpq0M743CplPDUmfR3JXgX0eDNsUUGCbBa32RNEvDv42HNSA7ajshlsT5+NHw3kUYGJEPuRMiZ2YsIvVHwytUahNzkHogaFZL8F/7dH5eXxvevxg2AWkqLB1iRMySNmazvxZc5QC47cNM0c5lTkxsIJbQQfdsfmIfhG9SuYsuEC+E5ONaipBcnEPkRFvPNuPtleDhzx9toSRhSkj4yQKaUC+JfjMonDK3l4arHOKkk71L3jMZSOGyD6yyaw6oPk+aufANKoWJry/nOz286bwTe7Dku3ny1B4uhIeXwxN0Qe58J7f/R0J9tWQF6WVJnv0H4d8vR3sIpOVJCbj4sB4clcXowihztHweBmofe/drPoeH0JnEnhb2n/UqdWpohTi2Hsj+RwWJsOi96MuZEUOKMtNnJKdq0tMIUhWOVUCDZCkAEDk5qzEn9QOZksPko1fdW/lW++NhC5+Rab72A0JXuuYf5sl0Oo3eNhpRNlmraDqlqILFZuS2oX8V+X0eo0ceqthRcEvx0dHubsIKcW26jVLXGN4raC2pxmlFUATnKNbeSWS1wbZxPNGyjMVcs+Nft2Jv4jimiqlczWa/b/Kk9ceDU8COixpmNoB6A5KFBBbh4tU3tTGW23o12LQ0y1QK8oTuvKy1kKD3RXCxUpIxIS/uf0mXbFZ6Nrjz7s3O5F+I1nkLi5+kUatM/pxYH7m3RW0fJe4Wm+9Ke9SA0ODg9auG+v8FDhaJAp42oEAAAAAASUVORK5CYII=" type="image/png" sizes="32x32" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yacht Adventures </title>
+    <title>Yacht Adventures</title>
     
-    <script type="module" crossorigin src="/project_group_21/assets/index-99e46b07.js"></script>
-    <link rel="stylesheet" href="/project_group_21/assets/index-ebe7d52f.css">
+    <script type="module" crossorigin src="/project_group_21/assets/index-3554d893.js"></script>
+    <link rel="stylesheet" href="/project_group_21/assets/index-64c45498.css">
   </head>
   <body>
     <!-- Anna -->
@@ -67,7 +73,7 @@
 </header>
     <main>
       <!-- hero -->
-      <!-- Iryna Kyva --> 
+      <!-- Iryna Kyva -->
       <section class="hero section">
     <div class="hero-container container">
       <div class="hero-box-text-content">
@@ -996,20 +1002,37 @@
   </div>
 </footer>
 
-    <!-- <button class="myBtn" onclick="topFunction()" id="myBtn" title="Go to top">
-      <svg class="svg-btn" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-        <rect width="44" height="44" rx="8" fill="#93ABAE"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 18.8889L22 14L26 18.8889H22.6928V30H21.3072V18.8889H18Z" fill="#F6F5EF"/>
-        </svg>
-    </button> -->
-    <!-- <div class="backdrop"></div> -->
+    <div id="myBtn" title="Back to top">
+      <img class="my-btn" src="/src/img/arrow up.png" alt="">
+    </div>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 600) {
+            jQuery('#myBtn').css('opacity', '1');
+          } else {
+            jQuery('#myBtn').css('opacity', '0');
+          }
+        });
+
+        jQuery('#myBtn').click(function () {
+          jQuery('body,html').animate(
+            {
+              scrollTop: 0,
+            },
+            1800
+          );
+          return false;
+        });
+      });
+    </script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
     
     
   </body>
