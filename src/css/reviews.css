@@ -110,6 +110,7 @@
     justify-content: center;
     gap: 10px;
     margin-top: 14px;
+    margin-bottom: 80px;
 }
 .navigation span:hover::before {
     background-color: #88B3B9;
@@ -155,6 +156,9 @@
         .card:nth-child(2) {
             display: flex;
         }
+        .navigation {
+          margin-bottom: 100px;
+        }
 }
 @media only screen and (min-width: 1280px) {
             .card:nth-child(3) {
@@ -165,7 +169,9 @@
                     height: 282px;
                 }
                 .reviews-card {
+                    margin-top: 64px;
                     justify-content: space-between
+                    
                 }
                 .review {
                     font-size: 16px;
