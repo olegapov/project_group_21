@@ -249,13 +249,16 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  fill: #f6f5ef;
+  color: #f6f5ef;
+  border-radius: 6px;
+  border: 1px solid rgba(246, 245, 239, 0.5);
 }
 
 .social-footer-link:hover,
 .social-footer-link:focus {
-  fill: var(--light-green, #93abae);
-  stroke: var(--light-green, #93abae);
+  color: var(--light-green, #93abae);
+  border: 1px solid var(--light-green, #93abae);
+  /*stroke: var(--light-green, #93abae);*/
 }
 
 /*.social-footer-link svg path {
@@ -275,14 +278,15 @@ stroke: var(--light-green, #93ABAE);
 } */
 
 .social-footericon {
-  fill: #f6f5ef;
-  background-color: var(--dark-blue);
+  fill: currentColor;
+  /*background-color: var(--dark-blue);
   stroke-width: 1px;
   stroke: rgba(246, 245, 239, 0.5);
   border-radius: 6px;
   border: 1px solid rgba(246, 245, 239, 0.5);
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  transition: 0.3s;
 }
 .footer-bottom {
   display: inline-flex;
