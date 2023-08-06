@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-
 function swiperSlider() {
     const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
     //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');

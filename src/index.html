@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="icon" href="fontisto_yacht.png" type="image/png" sizes="32x32" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yacht Adventures </title>
+    <title>Yacht Adventures</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Anna -->
-     <load src="partials/header.html" />
+    <load src="partials/header.html" />
     <main>
       <!-- hero -->
-      <!-- Iryna Kyva --> 
+      <!-- Iryna Kyva -->
       <load src="./partials/hero.html" />
-                <!-- about -->
+      <!-- about -->
       <!-- iris k. -->
       <load src="./partials/about.html" />
-                <!-- yahts -->
+      <!-- yahts -->
       <!-- Vlad Gos -->
       <load src="./partials/yahts.html" />
-                <!-- service -->
-      <!-- Helen Ruban --> 
+      <!-- service -->
+      <!-- Helen Ruban -->
       <load src="./partials/service.html" />
-                <!-- rent -->
+      <!-- rent -->
       <!-- Dmitrijs Dambergs -->
       <load src="./partials/rent.html" />
-                <!-- reviews -->
+      <!-- reviews -->
       <!-- Anton -->
       <load src="./partials/reviews.html" />
     </main>
-                <!-- footer -->
-      <!-- Olesya Geleznyak -->
+    <!-- footer -->
+    <!-- Olesya Geleznyak -->
     <load src="./partials/footer.html" />
+    <div id="myBtn" title="Back to top">
+      <img class="my-btn" src="/src/img/arrow up.png" alt="">
+    </div>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 600) {
+            jQuery('#myBtn').css('opacity', '1');
+          } else {
+            jQuery('#myBtn').css('opacity', '0');
+          }
+        });
+
+        jQuery('#myBtn').click(function () {
+          jQuery('body,html').animate(
+            {
+              scrollTop: 0,
+            },
+            1800
+          );
+          return false;
+        });
+      });
+    </script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script type="module" src="./js/swiper-config.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/swiper-config.js"></script>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/back_t_t.js"></script>
   </body>
 </html>

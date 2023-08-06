@@ -1,3 +1,232 @@
 .rent {
-    background-color: var(--white);
+  /*background-color: var(--white);*/
 }
+.section-rent-yacht {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: auto;
+  }
+}
+
+/*mob*/
+
+.cont-rent-yacht {
+  width: 100%;
+  background-color: #11131f;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .cont-rent-yacht {
+    flex-direction: row;
+    align-items: normal;
+    gap: 69px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cont-rent-yacht {
+    gap: 188px;
+  }
+}
+.rent-yacht {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .rent-yacht {
+    gap: 32px;
+    align-items: normal;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rent-yacht {
+    gap: 64px;
+  }
+}
+
+.rent-yacht-title {
+  color: var(--white, #f6f5ef);
+  font-family: 'DM Sans';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 66px */
+  letter-spacing: -1.62px;
+}
+@media screen and (min-width: 768px) {
+  .rent-yacht-title {
+    font-size: 60px;
+    letter-spacing: -2.7px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rent-yacht-title-span {
+    display: block;
+  }
+}
+
+.form-box,
+.form-text {
+  color: var(--white, #f6f5ef);
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.63px;
+}
+@media screen and (min-width: 768px) {
+  .form-box,
+  .form-text {
+    font-size: 16px;
+    letter-spacing: -0.72px;
+  }
+}
+.rent-form {
+  align-items: first baseline;
+}
+.form-button {
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  color: var(--white, #0e0c01);
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.63px;
+  background-color: var(--dark-blue, #11131f);
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .form-button {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
+}
+.form-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #f6f5ef;
+  background-color: #11131f;
+  margin-bottom: 28px;
+}
+.form-textarea {
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid #f6f5ef;
+
+  background-color: #11131f;
+}
+/*modal*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 66, 77, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window {
+  max-width: 335px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: #1f212d;
+  border-radius: 40px;
+  padding: 40px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .modal-window {
+    max-width: 570px;
+    width: 100%;
+    gap: 20px;
+    padding: 0;
+  }
+}
+
+.modal.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-button {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1c1a;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon {
+  fill: #11131f;
+}
+.popup-comments h2 {
+  color: var(--white, #f6f5ef);
+  font-family: 'DM Sans';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -1.44px;
+  margin-bottom: 16px;
+}
+.popup-comments p {
+  color: var(--white, #f6f5ef);
+
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.32px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-img {
+    margin-top: 98px;
+  }
+  .popup-comments {
+    margin: 0 64px;
+  }
+  .popup-comments {
+    margin-bottom: 64px;
+  }
+}
+/*update*/
