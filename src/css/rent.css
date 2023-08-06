@@ -93,6 +93,17 @@
 }
 .rent-form {
   align-items: first baseline;
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .rent-form {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rent-form {
+    margin-bottom: 164px;
+  }
 }
 .form-button {
   display: flex;
