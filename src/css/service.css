@@ -48,10 +48,12 @@ img {
     flex-direction: column;
     gap: 24px;
 }
+
 .service-container {
     position: relative;
     z-index: 2;
 }
+
 /* .service-item:nth-child(1):before  */
 .service-container::before {
     content: "";
@@ -68,6 +70,7 @@ img {
     position: absolute;
     z-index: 1;
 }
+
 @media only screen and (min-width:768px) {
     .service-container::before {
         content: "";
@@ -107,7 +110,7 @@ img {
 
 /* ------TABLET-------- */
 @media only screen and (max-width: 767px) {
-    .service-list{
+    .service-list {
         align-items: center;
     }
 }
@@ -119,13 +122,14 @@ img {
 
     .service-item:nth-child(2) {
         align-self: flex-end;
-     }
-    
+    }
+
     .service-item:last-child {
         padding-left: 32px;
         align-self: flex-start;
     }
 }
+
 /* ------DESKTOP----- */
 @media only screen and (min-width: 1280px) {
     .service-list {
@@ -135,9 +139,10 @@ img {
         gap: 64px;
     }
 
-   .service-item:nth-child(2) {
-       align-self: flex-end;
-   }
+    .service-item:nth-child(2) {
+        align-self: flex-end;
+    }
+
     .service-item:last-child {
         padding-left: 372px;
     }
@@ -147,10 +152,11 @@ img {
 .service-container-img {
     position: relative;
 }
+
 @media screen and (min-width:768px) {
     .img-diving {
         width: 704px;
-        content: url(./img/service/diving-tabl@1x.png);
+        content: url(./img/service/diving-tabl@1x.jpg);
     }
 }
 
@@ -159,14 +165,14 @@ screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
     .img-diving {
         width: 704px;
-        content: url(./img/service/diving-tabl@2x.png);
+        content: url(./img/service/diving-tabl@2x.jpg);
     }
 }
 
 @media screen and (min-width:768px) {
     .img-fishing {
         width: 400px;
-        content: url(./img/service/fishing-tabl@1x.png);
+        content: url(./img/service/fishing-tabl@1x.jpg);
     }
 }
 
@@ -175,14 +181,14 @@ screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
     .img-fishing {
         width: 400px;
-        content: url(./img/service/fishing-tabl@2x.png);
+        content: url(./img/service/fishing-tabl@2x.jpg);
     }
 }
 
 @media screen and (min-width:768px) {
     .img-sun {
         width: 380px;
-        content: url(./img/service/sun-tabl@1x.png);
+        content: url(./img/service/sun-tabl@1x.jpg);
     }
 }
 
@@ -191,14 +197,14 @@ screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
     .img-sun {
         width: 380px;
-        content: url(./img/service/sun-tabl@2x.png);
+        content: url(./img/service/sun-tabl@2x.jpg);
     }
 }
 
 @media screen and (min-width: 1280px) {
     .img-diving {
         width: 712px;
-        content: url(./img/service/diving-desk@1x.png);
+        content: url(./img/service/diving-desk@1x.jpg);
     }
 }
 
@@ -207,14 +213,14 @@ screen and (min-resolution: 192dpi) and (min-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .img-diving {
         width: 712px;
-        content: url(./img/service/diving-desk@2x.png);
+        content: url(./img/service/diving-desk@2x.jpg);
     }
 }
 
 @media screen and (min-width: 1280px) {
     .img-fishing {
         width: 440px;
-        content: url(./img/service/fishing-desk@1x.png);
+        content: url(./img/service/fishing-desk@1x.jpg);
     }
 }
 
@@ -223,14 +229,14 @@ screen and (min-resolution: 192dpi) and (min-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .img-fishing {
         width: 440px;
-        content: url(./img/service/fishing-desk@2x.png);
+        content: url(./img/service/fishing-desk@2x.jpg);
     }
 }
 
 @media screen and (min-width: 1280px) {
     .img-sun {
         width: 436px;
-        content: url(./img/service/sun-desk@1x.png);
+        content: url(./img/service/sun-desk@1x.jpg);
     }
 }
 
@@ -239,7 +245,7 @@ screen and (min-resolution: 192dpi) and (min-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .img-sun {
         width: 436px;
-        content: url(./img/service/sun-desk@2x.png);
+        content: url(./img/service/sun-desk@2x.jpg);
     }
 }
 
@@ -268,7 +274,3 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
         bottom: 32px;
     }
 }
-
-
-
-
