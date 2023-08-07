@@ -311,12 +311,6 @@
 @media screen and (min-width: 768px) {
   .footer-bottom {
     padding-top: 100px;
-    /*display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 32px;
-    padding-top: 263px;
-    padding-bottom: 16px;*/
   }
 }
 @media screen and (min-width: 1280px) {
