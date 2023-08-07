@@ -149,6 +149,22 @@
   }
 }
 
+.about-img-container {
+  margin-bottom: 146px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-img-container {
+    margin-bottom: 83px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-img-container {
+    margin-bottom: 95px;
+  }
+}
+
 .about-img-list {
   display: flex;
   flex-direction: column;
